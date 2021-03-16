@@ -1320,7 +1320,7 @@ int main(int argc, char** argv)
          << "Build: " << bi->system_name << "/" << bi->build_type << "/" << bi->compiler_id << endl
          << endl;
 
-    if (argc < 2)
+    if (argc < 1)
     {
         cerr << "No arguments specified. " << endl
              << "Try 'ethminer --help' to get a list of arguments." << endl
